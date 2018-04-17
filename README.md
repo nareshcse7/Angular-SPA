@@ -1,2 +1,5 @@
-# Angular-SPA
-Angular Application for event management.
+# angular sample app 
+
+Angular POC for abcd Company
+
+Created by xyz Company

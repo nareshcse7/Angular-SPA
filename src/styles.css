@@ -1,0 +1,125 @@
+/* You can add global styles to this file, and also import other style files */
+.spa-content{
+    background-color: #e9ecef;
+}
+.footer{
+    font-size: 18px;
+    padding: 15px;
+    background: #000;
+}
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.row{
+    flex-wrap: nowrap;
+}
+
+.home-footer {
+    padding: 1.3888vw 16vw;
+    font-family: neuzeit-grotesk,sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: .08em;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.footer-mailchimp {
+    width: 23.6096vw;
+    height: 2.7776vw;
+    position: relative;
+}
+.footer-mailchimp .input {
+    width: 23.6096vw;
+    height: 2.7776vw;
+    font-size: .83328vw;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 0;
+    padding: 0 6.2496vw 0 12px;
+    letter-spacing: .1em;
+    text-align: left;
+    transition: background .5s,color .5s;
+    border-radius: 0;
+    background-color: transparent!important;
+}
+.footer-mailchimp button {
+    color: #fff;
+    width: 5.5552vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: .83328vw;
+    border: 1px solid #fff;
+    margin: 0;
+    height: 2.7776vw;
+    text-align: center;
+    cursor: pointer;
+    transition: background .3s,color .3s;
+    letter-spacing: .1em;
+    background-color: darkslategray;
+}
+.home-footer .footer-socials a {
+    position: relative;
+    display: inline-block;
+    width: 2.63872vw;
+    height: 2.63872vw;
+    border-radius: 50%;
+    margin: 0 .3472vw;
+    transition: color .3s,background .3s,border .3s;
+}
+.wf-active a, .wf-active h1, .wf-active h2, .wf-active h3, .wf-active p {
+    opacity: 1;
+}
+.home-footer .footer-socials a .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s;
+}
+svg {
+    width: 100%;
+    height: 100%;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.home-footer .footer-socials a .icon.icon--rollover, .home-footer .footer-socials a:hover .icon {
+    opacity: 0;
+}
+.home-footer .footer-socials a .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s;
+}
+.home-footer .footer-address {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    font-size: .83328vw;
+    padding: 10px;
+}
+.home-footer .footer-address a:first-child {
+    padding-left: 0;
+}
+.home-footer .footer-address a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .83328vw;
+    position: relative;
+    color: #fff;
+    padding: 0 0 0 1.2em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
