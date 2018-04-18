@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('angular2-registration-login-example-cli App', () => {
+describe('angular-event-managment App', () => {
   let page: AppPage;
 
   beforeEach(() => {
