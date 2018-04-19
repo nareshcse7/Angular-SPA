@@ -2,6 +2,7 @@
 import { User } from './_models/index';
 import { UserService } from './_services/index';
 import '../assets/app.css';
+import { ScrollToTopService, BackToTopComponent } from './scroll-to-top/scroll-to-top';
 
 @Component({
     moduleId: module.id.toString(),
@@ -18,7 +19,7 @@ export class AppComponent implements OnInit {
     instagram:any = "./assets/image/instagram.png";
     youtube:any = "./assets/image/youtube.png";
 
-    constructor(private userService: UserService) {
+    constructor(private userService: UserService, public scrollToTopService: ScrollToTopService) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
         /* var lengthCal= this.currentUser.firstName.length; */
         console.log("Length:", this.currentUser); 
@@ -26,6 +27,10 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         this.loadAllUsers();
+        // When the user scrolls down 20px from the top of the page, show the button
+    window.onscroll = () => {     
+            this.scrollToTopService.enableBackToTop();
+     };
     }
     private loadAllUsers() {
         this.userService.getAll().subscribe(users => { this.users = users; });

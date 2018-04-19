@@ -2,7 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-
+import { ScrollToTopModule } from './scroll-to-top/scroll-to-top';
 // used to create dummy backend
 import { dummyBackendProvider } from './_helpers/index';
 
@@ -22,7 +22,8 @@ import { RegisterComponent } from './register/index';
         BrowserModule,
         FormsModule,
         HttpClientModule,
-        routing
+        routing,
+        ScrollToTopModule
     ],
     declarations: [
         AppComponent,
