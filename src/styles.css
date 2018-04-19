@@ -235,4 +235,8 @@ svg:not(:root) {
     line-height: 1.4;
     text-transform: uppercase;
 }
+.zoomClass {
+    animation : 10s linear 1s normal none infinite zoominout
+ }
 
+ #lp-pom-image-1 { display:none; }

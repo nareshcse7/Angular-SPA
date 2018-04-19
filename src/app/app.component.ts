@@ -20,9 +20,7 @@ export class AppComponent implements OnInit {
     youtube:any = "./assets/image/youtube.png";
 
     constructor(private userService: UserService, public scrollToTopService: ScrollToTopService) {
-        this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        /* var lengthCal= this.currentUser.firstName.length; */
-        console.log("Length:", this.currentUser); 
+        this.currentUser = JSON.parse(localStorage.getItem('currentUser')); 
     }
 
     ngOnInit() {

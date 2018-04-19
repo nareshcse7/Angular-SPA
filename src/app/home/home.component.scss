@@ -89,6 +89,20 @@ audio, canvas, progress, video {
     width: 100%;
     height: 100%;
 }
+.fade-visible {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
 @media screen and (max-width: 600px) {
     .column {
         -ms-flex: 100%;
