@@ -75,21 +75,27 @@ body {
 .logo-center{
     text-align: center;
 }
-.nav-menu, .welcome-msg{
-    margin: auto;
+.nav-menu{
     font-size: 20px;
+    width: 30%;
+    text-align: left;
+    padding: 20px;
+    margin: 15px 0px !important;
 }
-.column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    padding: 15px;
+.logo-center{
+    width: 40%;
+}
+.welcome-msg{
+    font-size: 20px;
+    width: 30%;
+    text-align: right;
+    padding: 20px;
+}
+.welcome-message{
+    padding: 20px;
+    margin: 0;
 }
 
-.column img {
-    margin: 15px 0;
-    vertical-align: middle;
-    height: 25%;
-}
 .home-section video {
     position: absolute;
     opacity: 0.5;
@@ -113,26 +119,6 @@ audio, canvas, progress, video {
     width: 100%;
     height: 100%;
 }
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-@media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-@media screen and (max-height: 767px) {
-  .sidenav {
-      padding-top: 15px;
-    }
-  .sidenav a {font-size: 18px;}
-}
 
 .spa-content{
     background-color: #e9ecef;
@@ -146,14 +132,9 @@ audio, canvas, progress, video {
     padding-right: 0px;
     padding-left: 0px;
 }
-.row{
-    flex-wrap: nowrap;
-    margin-right: 0px;
-    margin-left: 0px;
-}
 
 .home-footer {
-    padding: 20px 10%;
+    padding: 20px 0px;
     font-family: neuzeit-grotesk,sans-serif;
     background: #000;
     color: #fff;
@@ -169,9 +150,10 @@ audio, canvas, progress, video {
     justify-content: space-between;
 }
 .footer-mailchimp {
-    width: 23.6096vw;
+    width: 40%;
     height: 2.7776vw;
     position: relative;
+    text-align: center;
 }
 .footer-mailchimp .input {
     width: 23.6096vw;
@@ -192,7 +174,6 @@ audio, canvas, progress, video {
     width: 5.5552vw;
     position: absolute;
     top: 0;
-    right: 0;
     font-size: .83328vw;
     border: 1px solid #fff;
     margin: 0;
@@ -202,6 +183,14 @@ audio, canvas, progress, video {
     transition: background .3s,color .3s;
     letter-spacing: .1em;
     background-color: darkslategray;
+}
+.footer-socials{
+    width: 20%;
+    text-align: center;
+}
+.footer.text-center{
+     width: 40% !important;
+     text-align: center !important;
 }
 .home-footer .footer-socials a {
     position: relative;
@@ -262,8 +251,19 @@ svg:not(:root) {
     text-transform: uppercase;
 }
 .zoomClass {
-    animation : 10s linear 1s normal none infinite zoominout
- }
+    animation : 10s linear 1s normal none infinite zoominoutl;
+    padding: 20px !important;
+}
+.zoomClass img{
+    padding:20px;
+}
+.img-two-grid img{
+        height: 100% !important;
+        padding: 20px;
+    }
+.img-two-grid .column{
+    max-width: 50% !important;
+}
 
  #lp-pom-image-1 { display:none; }
 
@@ -274,10 +274,109 @@ svg:not(:root) {
      font-size: 16px;
  }
  .img-four-grid{
-    padding: 25px;
+    padding: 50px;
 }
 .grid-header{
     width: 100%;
     text-align: center;
     padding-top: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 0px;
+    margin: 0;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        padding-top: 15px;
+      }
+    .sidenav a {font-size: 18px;}
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .nav-menu{
+        width: 30%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .logo-center{
+        width: 40%;
+    }
+    .logo{
+        height: 40px;
+        width: 100px;
+        padding: 0px;
+        margin: 25px 0px;
+    }
+    .welcome-msg{
+        width: 30%;
+        padding: 0px;
+    }
+    .welcome-message{
+        padding: 5px 5px 5px 0px;
+        font-size: 14px !important;
+        margin: 20px 0px;
+    }
+    .home-footer{
+        display: block;
+    }
+    .footer-mailchimp{
+        width: 100% !important;
+        text-align: center;
+    }
+    .footer-socials{
+        width: 100% !important;
+        text-align: center;
+    }
+    .footer.text-center{
+        width:100% !important;
+        text-align: center;
+    }
 }

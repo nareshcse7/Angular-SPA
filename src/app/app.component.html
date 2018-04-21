@@ -1,7 +1,7 @@
 ﻿
 <div class="container-fluid">
 <div class="row header">
-    <div class="col-sm-3 col-md-3 col-lg-2 nav-menu">
+    <div class="nav-menu">
         <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
         <a [routerLink]="['/']" (click)="closeNav()">Home</a>
@@ -22,11 +22,11 @@
         
       <a style="font-size:40px;cursor:pointer;padding: 20px;" (click)="openNav()">&#9776;</a>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-8 logo-center">
+    <div class="logo-center">
             <img class="logo" [src]="logo" alt="Interior">
           
     </div>
-    <div class="col-sm-3 col-md-3 col-lg-2 welcome-msg">
+    <div class="welcome-msg">
         <app-welcome-message></app-welcome-message>
         </div>
     </div>
@@ -35,7 +35,7 @@
 <!-- main app container -->
 <div class="spa-content">
     <div class="container-fluid">
-        <div class="col-sm-12">
+        <div>
             <alert></alert>
             <router-outlet></router-outlet>
         </div>
@@ -46,7 +46,6 @@
 <app-back-to-top></app-back-to-top>
 
 <div class="home-footer">
-    <div>
         <div class="footer-mailchimp">
       
           <form id="subscribe-form" name="subscribe-form" class="validate mailchimp" target="_blank" novalidate="">
@@ -60,7 +59,7 @@
              <div style="position: absolute; left: -5000px" aria-hidden="true"><input type="text" tabindex="-1" value=""></div>
           </form>
         </div> 
-      </div>
+    
       <div class="footer-socials">
             <a href="https://www.facebook.com/LUXECompanies/" target="_blank"><span class="icon"><img [src]="facebook" width="40px" height="40px"></span></a>
             <a href="https://twitter.com/luxecompanies?lang=en" target="_blank"><span class="icon"><img [src]="twitter" width="40px" height="40px"></span></a>
@@ -68,9 +67,7 @@
             <a href="https://www.youtube.com/watch?v=JzAdlSWJq3o" target="_blank"><span class="icon"><img [src]="youtube" width="40px" height="40px"></span></a>
           </div>
       <div class="footer text-center">
-            <p class="copyRights">
                 <a href="#" target="_top">LCS@Copy right 2018 | All Rights Reserved</a>
-            </p>
         </div>
         </div>
     </div>
