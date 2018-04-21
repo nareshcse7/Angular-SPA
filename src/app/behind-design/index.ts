@@ -1,0 +1,1 @@
+﻿export * from './behind-design.component';

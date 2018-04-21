@@ -13,7 +13,7 @@ import { ScrollToTopService, BackToTopComponent } from './scroll-to-top/scroll-t
 export class AppComponent implements OnInit { 
     public currentUser: User;
     users: User[] = [];
-    logo:any = "../assets/image/sampleLogo.png";
+    logo:any = "../assets/image/logo.jpg";
     facebook:any = "./assets/image/Facebook.png";
     twitter:any = "./assets/image/twitter.png";
     instagram:any = "./assets/image/instagram.png";
@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         this.loadAllUsers();
+        this.closeNav();
         // When the user scrolls down 20px from the top of the page, show the button
     window.onscroll = () => {     
             this.scrollToTopService.enableBackToTop();
@@ -34,7 +35,8 @@ export class AppComponent implements OnInit {
         this.userService.getAll().subscribe(users => { this.users = users; });
     }
     openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        /* document.getElementById("mySidenav").style.display = "block"; */
+        document.getElementById("mySidenav").style.width = "100%";
     }
     
     closeNav() {

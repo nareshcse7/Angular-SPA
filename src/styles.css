@@ -3,12 +3,17 @@
 body {
     font-family: "Lato", sans-serif;
 }
-
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     background-color: #111;
@@ -20,10 +25,11 @@ body {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    text-align: center;
 }
 
 .sidenav a:hover {
@@ -32,23 +38,39 @@ body {
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    top: 20px;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.menu__animated.social{
+    transition-delay: .16s;
+    text-align: center;
+}
+.menu__animated{
+    opacity: 1;
+    transform: translateZ(0);
+    transition: transform 1.11s cubic-bezier(.165,.84,.44,1),opacity 1.11s ease;
+}
+.menu__animated a{
+    font-size: 18px !important;
+}
+.social{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 5vh;
+}
+.social a {
+    margin-right: 1.3888vw;
+    display: inline-block;
+    color: #fff;
+    opacity: 1;
 }
 .main-content{
-    background-color: green;
-    padding-bottom: 20px;
-}
-.carousel{
-    width: 100%;
-}
-.carousel-indicators{
-    width: auto;
+    background-color: white;
 }
 .logo{
     height: 100px;
+    padding: 20px;
 }
 .logo-center{
     text-align: center;
@@ -105,8 +127,10 @@ audio, canvas, progress, video {
         max-width: 50%;
     }
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+@media screen and (max-height: 767px) {
+  .sidenav {
+      padding-top: 15px;
+    }
   .sidenav a {font-size: 18px;}
 }
 
@@ -129,17 +153,19 @@ audio, canvas, progress, video {
 }
 
 .home-footer {
-    padding: 1.3888vw 16vw;
+    padding: 20px 10%;
     font-family: neuzeit-grotesk,sans-serif;
     background: #000;
     color: #fff;
     line-height: 1;
     letter-spacing: .08em;
     display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
     -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
     justify-content: space-between;
 }
 .footer-mailchimp {
@@ -240,3 +266,18 @@ svg:not(:root) {
  }
 
  #lp-pom-image-1 { display:none; }
+
+ .col-sm-12{
+     padding: 0px !important;
+ }
+ .copyRights{
+     font-size: 16px;
+ }
+ .img-four-grid{
+    padding: 25px;
+}
+.grid-header{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}

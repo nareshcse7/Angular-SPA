@@ -1,32 +1,31 @@
 ﻿<div class="container-fluid">
-       <!--  <div class="row">
-            <div class="col-sm-3 col-md-3 col-lg-2 nav-menu">
-                <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Gifts</a>
-                <a href="#">Health</a>
-                <a href="#">Music</a>
-                <a href="#">Sports</a>
-                <a href="#">Education</a>
-                <a href="#">Handmade</a>
-                <a href="#">Food</a>
-              </div>
-              <a style="font-size:30px;cursor:pointer;" (click)="openNav()">&#9776; Menu</a>
+            <div class="row"> 
+              <video class="video-layout" [src]="video1" autoplay="" muted="" loop="" playsinline=""></video>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-8 logo-center">
-                    <img class="logo" [src]="logo" alt="Interior">
-                  
-            </div>
-            <div class="col-sm-3 col-md-3 col-lg-2 welcome-msg">
-                    <p>  Welcome {{currentUser.firstName}} <a [routerLink]="['/login']">Logout</a></p>
-            </div>
-            </div> -->
-
+                            <!-- Photo Grid -->
+                            <div class="grid-header">
+                                <h1>Our cave of wonders</h1>
+                              </div>
+                            <div class="row img-four-grid"> 
+                              <div class="column zoomClass">
+                                  <img [src]="trendImage5" style="width:100%" class="fade-visible">
+                                  <img [src]="trendImage6" style="width:100%" class="fade-visible"> 
+                              </div>
+                              <div class="column zoomClass">
+                                <img [src]="trendImage7" style="width:100%" class="fade-visible">
+                                <img [src]="trendImage8" style="width:100%" class="fade-visible">
+                             </div>
+                              <div class="column zoomClass">
+                                  <img [src]="trendImage1" style="width:100%" class="fade-visible">
+                                  <img [src]="trendImage2" style="width:100%" class="fade-visible">
+                              </div>
+                              <div class="column zoomClass">
+                                <img [src]="trendImage3" style="width:100%" class="fade-visible">
+                                <img [src]="trendImage4" style="width:100%" class="fade-visible">
+                            </div>
+                </div>
             <div class="row main-content">
-                <div id="demo" class="carousel slide" data-ride="carousel">
+                <div id="demo" class="carousel slide" data-ride="carousel" data-interval="2000">
 
                             <!-- Indicators -->
                             <ul class="carousel-indicators">
@@ -38,13 +37,13 @@
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img [src]="slideImage1" alt="Fashion" width="100%" height="500">
+                                <img [src]="slideImage1" alt="slide1" width="100%" height="500">
                               </div>
                               <div class="carousel-item">
-                                <img [src]="slideImage2" alt="Interior" width="100%" height="500">
+                                <img [src]="slideImage2" alt="slide2" width="100%" height="500">
                               </div>
                               <div class="carousel-item">
-                                <img [src]="slideImage3" alt="Food" width="100%" height="500">
+                                <img [src]="slideImage3" alt="slide3" width="100%" height="500">
                               </div>
                             </div>
                             
@@ -57,25 +56,20 @@
                             </a>
                           </div>
                         </div>
-                    <!-- Photo Grid -->
-            <div class="row"> 
-                    <div class="column zoomClass">
-                        <img [src]="trendImage4" style="width:100%">
-                        <img [src]="trendImage5" style="width:100%" class="fade-visible">
-                        <img [src]="trendImage6" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <img [src]="trendImage1" style="width:100%" class="fade-visible">
-                        <img [src]="trendImage3" style="width:100%">
-                        <img [src]="trendImage2" style="width:100%" class="fade-visible">
-                    </div>
-                    <div class="column">
-                        <img [src]="trendImage7" style="width:100%">
-                        <img [src]="trendImage8" style="width:100%" class="fade-visible">
-                        <img [src]="trendImage9" style="width:100%">
-                    </div>
-      </div>
-      <div class="row"> 
-        <video class="video-layout" src="https://player.vimeo.com/external/213640098.sd.mp4?s=8511f88bf41f14e469aea802e68f9d662dcb3235&amp;profile_id=165" autoplay="" muted="" loop="" playsinline=""></video>
-      </div>
+    
+            <!-- Photo Grid -->
+            
+            <div class="grid-header">
+              <h1>Latest projects</h1>
+            </div>
+            <div class="row img-two-grid"> 
+              <div class="column">
+                  <img [src]="LargeImage1" style="width:100%">
+              </div>
+              <div class="column">
+                <img [src]="LargeImage2" style="width:100%">
+              </div>
+            </div>
+
+      
 </div>

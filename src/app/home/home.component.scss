@@ -1,49 +1,65 @@
 body {
     font-family: "Lato", sans-serif;
 }
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-.main-content{
-    background-color: green;
-    padding-bottom: 20px;
-}
 .carousel{
     width: 100%;
+    margin: 20px;
 }
 .carousel-indicators{
     width: auto;
+}
+.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 42px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    background: rgba(0,0,0,.1);
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'squarespace-ui-font';
+    right: 30px;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+    -moz-transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+    -ms-transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+    -o-transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+    transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+}
+.carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 42px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    background: rgba(0,0,0,.1);
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'squarespace-ui-font';
+    left: 30px;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+    -moz-transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+    -ms-transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+    -o-transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+    transition: all 100ms cubic-bezier(.25,.46,.45,.94);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
 }
 .logo{
     height: 100px;
@@ -58,13 +74,23 @@ body {
 .column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
-    padding: 15px;
+    padding: 25px 30px;
 }
 
 .column img {
     margin: 15px 0;
     vertical-align: middle;
-    height: 25%;
+    height: 40%;
+}
+.img-four-grid{
+    padding: 25px;
+}
+.img-two-grid{
+margin: 0 30px 30px 30px;
+}
+.img-two-grid img{
+    height: 100% !important;
+    padding: 20px;
 }
 .home-section video {
     position: absolute;
@@ -94,8 +120,8 @@ audio, canvas, progress, video {
 }
 
 .fadeIn {
-    -webkit-animation: animat_show 0.8s;
-    animation: animat_show 0.8s;
+    -webkit-animation: animat_show 0.9s;
+    animation: animat_show 0.9s;
     visibility: visible !important;
 }
 
@@ -117,7 +143,7 @@ audio, canvas, progress, video {
         max-width: 50%;
     }
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.zoomClass img:hover{
+    transition: transform 0.9s;
+        transform: scale(1.2);
 }

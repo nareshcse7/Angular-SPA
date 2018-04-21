@@ -1,4 +1,4 @@
-﻿<div class="col-md-6 col-md-offset-3">
+﻿<div class="col-md-6 col-md-offset-3 reg-content">
     <h2>Register</h2>
     <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
         <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
@@ -23,8 +23,32 @@
         </div>
         <div class="form-group">
             <button [disabled]="loading" class="btn btn-primary">Register</button>
-            <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
             <a [routerLink]="['/login']" class="btn btn-link">Cancel</a>
         </div>
     </form>
+
+    <div class="help-col">
+            <h3>    Here to help  </h3>
+            <p></p><div>
+          <div>Have a question?&nbsp;You may find an answer in our <a href="#" tabindex="0">FAQs</a>.</div>
+          
+          <div>But you can also contact us:</div>
+          </div>          
+            <div>
+                    <div class="title-small">Customer Service</div>
+                <div class="call-us">
+                          <a href="tel:1234567890" tabindex="0">
+                    Call 123-456-7890 </a>
+                </div>
+                <div class="opening-hours">
+                    <span> Monday to Friday:9am - 6pm ET</span>
+                    <span>Thursday: 9am-7pm ET</span>
+                    <span>Saturday: 10am -6pm ET </span>
+                </div>
+                  <p class="email-us">
+                      <a href="#" data-tray-trigger="tray-email" tabindex="0">
+                  Send us an email </a>
+              </p>
+            </div>
+          </div>
 </div>

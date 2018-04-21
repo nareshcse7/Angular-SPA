@@ -17,6 +17,7 @@ import { HomeComponent } from './home/index';
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { WelcomeMessageComponent } from './welcome-message/index';
+import { BehindDesignComponent } from './behind-design/behind-design.component';
 
 @NgModule({
     imports: [
@@ -32,7 +33,8 @@ import { WelcomeMessageComponent } from './welcome-message/index';
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-        WelcomeMessageComponent
+        WelcomeMessageComponent,
+        BehindDesignComponent
     ],
     providers: [
         AuthGuard,
