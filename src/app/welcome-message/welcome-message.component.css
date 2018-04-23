@@ -1,7 +1,6 @@
 .header-account{
-    margin-top: -3px;
     position: relative;
-    padding: 0px 10px;
+    padding: 0px 10px 0px 0px;
     vertical-align: text-top;
 }
 .welcome-message{

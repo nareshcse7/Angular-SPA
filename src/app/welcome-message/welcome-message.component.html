@@ -2,7 +2,6 @@
     <div *ngIf = "!this.currentUser" class="user-account">
         <i class="material-icons">account_circle</i>
         <a class="header-account" [routerLink]="['/login']">Account</a>
-    </div>
+    </div>       
     <p class="welcome-message" *ngIf = "this.currentUser">  Welcome {{currentUser.firstName}} <a [routerLink]="['/login']">Logout</a></p>
-
 </div>

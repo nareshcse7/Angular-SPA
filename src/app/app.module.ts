@@ -18,6 +18,8 @@ import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { WelcomeMessageComponent } from './welcome-message/index';
 import { BehindDesignComponent } from './behind-design/behind-design.component';
+import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
+import { ProjectStreamComponent } from './project-stream/project-stream.component';
 
 @NgModule({
     imports: [
@@ -34,7 +36,9 @@ import { BehindDesignComponent } from './behind-design/behind-design.component';
         LoginComponent,
         RegisterComponent,
         WelcomeMessageComponent,
-        BehindDesignComponent
+        BehindDesignComponent,
+        WhatWeDoComponent,
+        ProjectStreamComponent,
     ],
     providers: [
         AuthGuard,

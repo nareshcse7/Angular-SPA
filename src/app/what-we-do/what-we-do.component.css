@@ -1,0 +1,10 @@
+.column.what-we-do {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 20%;
+}
+@media screen and (max-width: 1200px) {
+    .column.what-we-do {
+        margin: 0 2%;
+    }
+}
